@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+#header {
+    background-color: mediumseagreen;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #333;
+}
+
+#nbar{
+	
+	display:flex;
+	align-items: center;
+	justify-content:center
+}
+#nbar li{
+	
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+#nbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+	transform:translatey (-4px);
+	transition: 0.3s ease;
+	
+}
+#nbar li a:hover,
+#nbar li a.active{
+	color: lightblue;
+}
+
+#nbar li a.active::after,
+#nbar li a:hover::after{
+	content:"";
+	width: 30%;
+	height: 2px;
+	background: lightblue;
+    position: absolute;
+	bottom: -4px;
+    left: 20px
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text i {
+    margin-right: 5px;
+}
+
+.icon-text span {
+    font-size: 14px;
+}
+
+/* Product Details Styles */
+#product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-img img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h2 {
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.product-info p {
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stars a {
+    color: #f39c12;
+    margin-right: 5px;
+}
+
+.stars a:last-child {
+    color: #666;
+    margin-left: 10px;
+}
+
+.product-info p span {
+    font-weight: bold;
+    color: #333;
+}
+
+a.add-to-cart-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}

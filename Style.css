@@ -1,0 +1,218 @@
+#header{
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	padding: 18px 10%;
+	background: MediumSeaGreen;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+}
+
+body{
+	background:rgba(144, 238, 144, 0.084);
+	
+    color:black
+}
+#nbar{
+	
+	display:flex;
+	align-items: center;
+	justify-content:center
+}
+#nbar li{
+	
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+#nbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+	transform:translatey (-4px);
+	transition: 0.3s ease;
+	
+}
+#nbar li a:hover,
+#nbar li a.active{
+	color: lightblue;
+}
+
+#nbar li a.active::after,
+#nbar li a:hover::after{
+	content:"";
+	width: 30%;
+	height: 2px;
+	background: lightblue;
+    position: absolute;
+	bottom: -4px;
+    left: 20px
+}
+#home{
+	background-image: url(Img/background.jpg);
+	height: 70vh;
+	width:100;
+	color:lightblue;
+	padding: 0 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.header2{
+	justify-content: space-between;
+	padding: 0 20px;
+	display: flex;
+	padding:30px 14%;
+	background-color: lightgreen;
+	font-size: 22px;
+	font-weight: bold;
+}
+.right{
+	display:flex;
+}
+.right a{
+	
+	/*text-decoration:none;
+	margin: 0 20px; */
+	text-decoration: none;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust padding to make the border bigger */
+    border: 2px solid #333; /* Adjust border width and color as needed */
+    border-radius: 5px;
+    font-size: 14px; /* Adjust font size as needed */
+    text-align: center;
+    box-sizing: border-box;
+	color: black;
+}
+.right a:hover{
+	transform:translateY(-4px);
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px; /* Adjust as needed */
+}
+
+.icon-text i {
+    font-size: 20px; /* Adjust as needed */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+.btn{
+	text-decoration: none;
+	display:inline-block;
+	padding: 14px 42px;
+	background: black;
+	color:aliceblue;
+	transition: 0.3s ease;
+
+}
+.btn:hover{
+	
+	border: 2px solid var(--text-color);
+	background: green;
+	color: white;
+}
+/* Centering the "Products" heading */
+#products h2 {
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin: 0.83em 0; /* top and bottom margin */
+    font-weight: bold;
+}
+
+/* Flexbox for the main content area to create rows of 4 items */
+#products .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Gap between items */
+    margin-top: 4rem;
+}
+
+/* Flexbox for each product item */
+#products .content {
+    flex: 0 0 23%; /* Each item takes up approximately 23% of the container's width */
+    box-sizing: border-box;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(144, 238, 144, 0.256);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for product items */
+#products .content:hover {
+    box-shadow: 20px 20px 30px rgba(144, 238, 144, 0.084);
+}
+
+/* Styling for images within each product item */
+#products .content img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Flexbox for row image */
+#products .row-img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Flexbox for the stars */
+#products .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Flexbox for "Add to Cart" */
+#products .row-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Optional: Style adjustments for links and icons */
+#products a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#products .fa-cart-shopping {
+    margin-left: 5px;
+}
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
